@@ -10,35 +10,49 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <title>Frontend Mentor | Meet landing page</title>
   </head>
 
-  <header>
-    <img src="./assets/logo.svg" alt="logo" />
-  </header>
-
   <body>
-    <article>
-      <section>
+    <header>
+      <img class="logo" src="./assets/logo.svg" alt="logo" />
+    </header>
+    <img class="hero" src="./assets/tablet/image-hero.png" alt="" />
+    <article class="main-wrapper">
+      <section class="main-container">
         <h1>Group chat for everyone</h1>
         <p>
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
+        <a href="/">Download v1.3</a>
+        <a href="/">What is it?</a>
 
-        <a href="">Download v1.3</a>
-        <a href="">What is it?</a>
-      </section>
+        <div>01</div>
+        <!-- images block -->
+        <div class="main-img-stack">
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="woman using laptop for a video call"
+          />
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="women using mobile phone for video call"
+          />
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="two men in a video call on a laptop"
+          />
+          <img
+            src="./assets/desktop/image-man-texting.jpg"
+            alt="man texting on his phone"
+          />
+        </div>
 
-      <!-- image block -->
-      <div></div>
-
-      <div>01</div>
-
-      <section>
         <h2>Built for modern use</h2>
         <h3>Smarter meetings, all in one place</h3>
         <p>
@@ -47,20 +61,15 @@
           access, data encryption, and data export.
         </p>
       </section>
-      <div>02</div>
-      <section>
+
+      <footer>
+        <div>02</div>
         <h3>Experience more together</h3>
         <p>
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
         <a href="">Download v1.3</a>
-      </section>
-      <footer>
-        <p>
-          Project designed by <a href="">Frontend Mentor</a> coded by
-          <a href="">RMKcreative</a>
-        </p>
       </footer>
     </article>
   </body>
