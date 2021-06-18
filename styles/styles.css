@@ -66,6 +66,10 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.main-container__middle h3 {
+  max-width: 27.8rem;
+}
+
 h4 {
   color: var(--color-grey);
 }
@@ -104,6 +108,7 @@ footer h3 {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  min-width: 100vw;
 }
 
 .hero {
@@ -117,6 +122,7 @@ footer h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .main-container__top {
@@ -172,6 +178,10 @@ footer h3 {
 }
 
 .main-container__middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1.65rem;
 }
 
@@ -226,18 +236,71 @@ footer {
                     TABLET
 
 *****************************************************/
-@media only screen and (min-width: 31.25rem) {
+@media only screen and (min-width: 500px) {
   .main-container__img-stack {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media only screen and (min-width: 48rem) {
-  body {
-    background-image: url(/JPG/Meet-Tablet.jpg);
-  }
+@media only screen and (min-width: 850px) {
   h1 {
     font-size: 3rem;
     margin-top: 2.5rem;
   }
+  h3 {
+    font: 2.5rem;
+  }
+  .hero-container {
+    max-height: 20rem;
+  }
 }
+
+@media only screen and (min-width: 1440px) {
+  .hero-container,
+  .hero {
+    display: none;
+  }
+  body {
+    background-image: url(/assets/desktop/image-hero-left.png), url(/assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-position: top 9.5% left -3%, top 13% right -3%;
+  }
+}
+
+/********  DEATH ZONE ********/
+/*
+@media only screen and (min-width: 51.25rem) {
+    .hero {
+      display: none;
+    }
+    .hero-split {
+      display: visible;
+    }
+
+  .hero-container {
+    background-image: url(/assets/desktop/image-hero-left.png),
+      url(/assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+
+    border: 5px solid red;
+    max-width: 100vw;
+    min-height: 23rem;
+
+    border: 2px solid red;
+  }
+
+    .hero-container__inner {
+      position: relative;
+    }
+
+    .hero-container__inner-left {
+      transform: translatex(-13.5rem);
+      border: 2px dotted green;
+    }
+
+    .hero-container__inner-right {
+      transform: translate(13.5rem, 2.5rem);
+      border: 2px dotted blue;
+    }
+}
+*/
