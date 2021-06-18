@@ -190,6 +190,10 @@ footer h3 {
   margin: 0.5rem;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
 .btn-info {
   padding: 1rem 2rem;
   background-color: var(--color-dark-purple);
@@ -223,17 +227,17 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4rem 3rem;
-  width: 100%;
 }
 
 /*****************************************************
 
-                    TABLET
+                    MEDIA QUERIES
 
 *****************************************************/
 @media only screen and (min-width: 500px) {
@@ -253,9 +257,18 @@ footer {
   .hero-container {
     max-height: 20rem;
   }
+  .main-container__img-stack {
+    padding: 0 10rem;
+  }
+  footer {
+    background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(/assets/tablet/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .hero-container,
   .hero {
     display: none;
@@ -265,42 +278,34 @@ footer {
     background-repeat: no-repeat;
     background-position: top 9.5% left -3%, top 13% right -3%;
   }
-}
-
-/********  DEATH ZONE ********/
-/*
-@media only screen and (min-width: 51.25rem) {
-    .hero {
-      display: none;
-    }
-    .hero-split {
-      display: visible;
-    }
-
-  .hero-container {
-    background-image: url(/assets/desktop/image-hero-left.png),
-      url(/assets/desktop/image-hero-right.png);
-    background-repeat: no-repeat;
-
-    border: 5px solid red;
-    max-width: 100vw;
-    min-height: 23rem;
-
-    border: 2px solid red;
+  h3 {
+    margin: 0;
   }
-
-    .hero-container__inner {
-      position: relative;
-    }
-
-    .hero-container__inner-left {
-      transform: translatex(-13.5rem);
-      border: 2px dotted green;
-    }
-
-    .hero-container__inner-right {
-      transform: translate(13.5rem, 2.5rem);
-      border: 2px dotted blue;
-    }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  footer .btn-download {
+    margin-top: 0;
+  }
+  footer h3 {
+    width: 15rem;
+  }
+  footer p {
+    width: 19rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  footer {
+    background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(/assets/desktop/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: center;
+    padding: 7rem;
+  }
 }
-*/
