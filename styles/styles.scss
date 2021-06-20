@@ -123,10 +123,6 @@ footer h3 {
   object-fit: cover;
 }
 
-.hero-split {
-  //   display: none;
-}
-
 .main-wrapper {
   text-align: center;
   display: flex;
@@ -320,6 +316,10 @@ footer {
 
   h3 {
     margin: 0;
+  }
+
+  .point__one {
+    margin-top: 10rem;
   }
 
   .footer-container {

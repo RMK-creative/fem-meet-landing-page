@@ -281,6 +281,9 @@ footer {
   h3 {
     margin: 0;
   }
+  .point__one {
+    margin-top: 10rem;
+  }
   .footer-container {
     display: flex;
     flex-direction: row;
