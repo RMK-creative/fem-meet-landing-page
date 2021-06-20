@@ -280,6 +280,14 @@ footer {
   .main-container__img-stack {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  h3 {
+    padding: 0 3rem;
+  }
+
+  .main-container__middle {
+    max-width: 32rem;
+  }
 }
 
 @media only screen and (min-width: 850px) {
