@@ -1,0 +1,19 @@
+{
+  "name": "fem-meet-landing-page",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RMK-creative/fem-meet-landing-page.git"
+  },
+  "author": "Rachael Kunz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RMK-creative/fem-meet-landing-page/issues"
+  },
+  "homepage": "https://github.com/RMK-creative/fem-meet-landing-page#readme"
+}
